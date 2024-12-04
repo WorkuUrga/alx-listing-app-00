@@ -1,40 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ALX Listing App
 
-## Getting Started
+## Description
 
-First, run the development server:
+This project is an Airbnb clone that features a listing page with reusable components, a scalable folder structure, and modern tools like TypeScript, Tailwind CSS, and Next.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Goals
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### User-Centric Design:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To create an intuitive and visually appealing interface that inhances user experience.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Responsive Layout:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+This project aims to ensure the application of fully responsive and functioning seamlessly on various devices and screen sizes
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Search and Filter Functionality:
 
-## Learn More
+To implement robust search and filtering options to help users find the perfect accomodation quickly.
 
-To learn more about Next.js, take a look at the following resources:
+### Booking management:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Enable users to manage their bookings, including making reservations and viewing past stays.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### User Authentication:
 
-## Deploy on Vercel
+Incorporate secure user registration and login features to protect user data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Portfolio Development:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Develop a project that showcases frontend development skills that can be included in professional portfolios.
+Practice React.js and other relevant technologies to create a scalable and maintainable codebase.
+
+## Project Structure
+
+**`components/`**: Contains reusable components like `Card` and `Button`.
+
+- **`interfaces/`**: Stores TypeScript interfaces for consistent typing.
+- **`constants/`**: Holds constants like API URLs and reusable values.
+- **`public/assets/`**: Contains images and assets.
+- **`pages/`**: Includes the core pages of the app.
+- **`styles/globals.css`**: Global styles for the project.
+
+## **Instructions for Running the Project Locally**
+
+Follow these steps to set up and run the project locally.
+
+### **1. Prerequisites**
+
+Before starting, ensure you have:
+
+- **Node.js** (16.x or newer)
+- **npm** (installed with Node.js)
+- **Git**
+
+### **2. Clone the Repository**
+
+1. Open your terminal.
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/alx-listing-app.git
+   ```
