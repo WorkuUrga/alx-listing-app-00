@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { IoIosBed } from "react-icons/io";
+import { FaBath } from "react-icons/fa";
+import { BsFillPeopleFill } from "react-icons/bs";
 
 interface CardProps {
     image: string;
@@ -6,8 +9,12 @@ interface CardProps {
     location: string;
     price: string;
     rating: number;
-    type: string;
     features: string[];
+    details: {
+        beds: number;
+        baths: number;
+        capacity: string;
+    };
 }
 const Card: React.FC<CardProps> =({
     image,
@@ -15,8 +22,8 @@ const Card: React.FC<CardProps> =({
     location,
     price,
     rating,
-    type,
     features,
+    details,
 }) => {
     return (
         <div className="bg-white rounded-lg overflow-hidden">
@@ -29,9 +36,8 @@ const Card: React.FC<CardProps> =({
                     className="rounded-lg"
                 />
             </div>
-            <div className="flex justify-between">
-                <p className="text-sm text-gray-300">{type}</p>
-                <div>{features.map((feature, index) => (
+            <div className="flex items-center justify-between">
+                <div className="flex items-center gap-6 text-sm text-gray-600 mt-2">{features.map((feature, index) => (
                     <span key={index}>{feature}</span>
                 ))}</div>
             </div>
@@ -40,8 +46,24 @@ const Card: React.FC<CardProps> =({
                     <h3 className="text-lg font-bold">{title}</h3>
                     <span className="text-yellow-500">⭐{rating}</span>
                 </div>
-                <p className="text-gray-300">{location}</p>
-                <p className="text-lg font-semibold">{price}</p>
+                <p className="text-gray-500">{location}</p>
+                <div className="flex justify-between mt-4">
+                    <div className="flex items-center justify-center gap-4 border rounded-full px-3 py-1">
+                        <div className="flex items-center justify-center gap-1">
+                            <IoIosBed />
+                            <p>{details.beds}</p>
+                        </div>
+                        <div className="flex items-center justify-center gap-1">
+                            <FaBath />
+                            <p>{details.baths}</p>
+                        </div>
+                        <div className="flex items-center justify-center gap-1">
+                            <BsFillPeopleFill />
+                            <p>{details.capacity}</p>
+                        </div>
+                    </div>
+                    <p className="text-lg font-semibold">{price}</p>
+                </div>
             </div>
         </div>
     );
