@@ -1,7 +1,6 @@
 import React from "react";
 import {PROPERTY_CATEGORIES} from '../../constants/index'
-import { FiSearch } from "react-icons/fi";
-
+import SearchBar from "./SearchBar";
 
 const Header: React.FC = () => {
     return (
@@ -10,19 +9,11 @@ const Header: React.FC = () => {
                 <div className="text-2xl font-bold text-gray-800">
                     <img src="assets/accomodations/logo.png" alt="" />
                 </div>
-                <div className="flex">
-                    <input 
-                    type="text" 
-                    placeholder="Search for destination"
-                    className="w-full px-4 py-4 border rounded-lg focus:outline-none"
-                    />
-                    <button className="bg-yellow-500 px-4 py-2 text-white font-medium rounded-full">
-                        <FiSearch />
-                    </button>
-                </div>
+                
+                <SearchBar />
                 <div className="flex gap-6">
-                    <button className="text-gray-700 font medium hover:bg-green-700 hover:text-white">Sign in</button>
-                    <button className="text-gray-700 font medium hover:bg-green-700 hover:text-white">Sign up</button>
+                    <button className="text-gray-700 font medium hover:bg-green-700 hover:text-white px-7 py-3 border rounded-full">Sign in</button>
+                    <button className="text-gray-700 font medium hover:bg-green-700 hover:text-white px-7 py-3 border rounded-full">Sign up</button>
                 </div>
             </div>
             <div>

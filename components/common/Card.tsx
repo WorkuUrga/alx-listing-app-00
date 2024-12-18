@@ -44,7 +44,10 @@ const Card: React.FC<CardProps> =({
             <div className="pt-4">
                 <div className="flex justify-between items-center">
                     <h3 className="text-lg font-bold">{title}</h3>
-                    <span className="text-yellow-500">⭐{rating}</span>
+                    <div>
+                        <span className="text-yellow-500">⭐</span>
+                        <span>{rating}</span>
+                    </div>
                 </div>
                 <p className="text-gray-500">{location}</p>
                 <div className="flex justify-between mt-4">
