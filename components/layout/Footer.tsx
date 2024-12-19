@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10">
-      <div className="container mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
+      <div className="container mx-auto px-6 lg:px-12 flex justify-between gap-8">
+        <div className="w-1/3">
           <h2 className="text-white text-2xl font-bold mb-4">alx</h2>
           <p className="text-sm leading-relaxed">
             ALX is a platform where travelers can discover and book unique,

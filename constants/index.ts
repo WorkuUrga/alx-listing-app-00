@@ -433,3 +433,4 @@ export const PROPERTY_CATEGORIES = [
     image: '/assets/accomodations/type17.png'
   },
 ]
+

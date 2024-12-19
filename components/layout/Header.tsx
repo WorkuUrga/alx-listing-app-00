@@ -17,15 +17,16 @@ const Header: React.FC = () => {
                 </div>
             </div>
             <div>
-                <div className="container mx-auto py-4 flex justify-center items-start gap-8">
+                <div className="container  py-4 flex justify-center items-start gap-8">
                     {PROPERTY_CATEGORIES.map((category, index) => (
                         <div key={index} className="flex flex-col items-center justify-center">
                             <img src={category.image} alt={category.name}
                             className=""
                             />
-                            <p className="text-sm text-gray-400">{category.name}</p>
+                            <p className="text-[13px] text-gray-400">{category.name}</p>
                         </div>
                     ))}
+                    <hr />
                 </div>
             </div>
         </header>

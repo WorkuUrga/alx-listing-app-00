@@ -2,8 +2,8 @@ import React from 'react'
 
 const SearchBar = () => {
   return (
-    <div className='flex items-center bg-white rounded-full shadow-md py-1 px-4 overflow-hidden mx-auto'>
-        <div className='flex-1 border-r border-gray-200 p-3'>
+    <div className='flex items-center bg-white rounded-full shadow-md px-2 overflow-hidden mx-auto'>
+        <div className='flex-1 border-r border-gray-200 p-2'>
             <label className='block text-sm font-medium text-gray-500'>Location</label>
             <input 
             type="text" 
@@ -11,7 +11,7 @@ const SearchBar = () => {
             className='w-full text-sm text-gray-600 placeholder-gray-400 outline-none'
             />
         </div>
-        <div className='flex-1 border-r border-gray-200 p-3'>
+        <div className='flex-1 border-r border-gray-200 p-2'>
             <label className='block text-sm font-medium text-gray-500'>Check in</label>
             <input 
             type="text"
@@ -19,21 +19,21 @@ const SearchBar = () => {
             className='w-full text-sm text-gray-400 placeholder-gray-400 outline-none'
             />
         </div>
-        <div className='flex-1 border-r border-gray-200 p-3'>
+        <div className='flex-1 border-r border-gray-200 p-2'>
             <label className='block text-sm font-medium text-gray-500'>Check out</label>
             <input 
             type="text" 
             placeholder='Add date'
             className='w-full text-sm text-gray-400 placeholder-gray-400 outline-none'/>
         </div>
-        <div className='flex-1 border-r border-gray-200 p-3'>
+        <div className='flex-1 border-gray-200 p-2'>
             <label className='block text-sm font-medium text-gray-500'>People</label>
             <input 
             type="text" 
             placeholder='Add guest'
             className='w-full text-sm text-gray-400 placeholder-gray-400 outline-none'/>
         </div>
-        <button className="bg-yellow-500 hover:bg-yellow-600 text-white p-4 rounded-full flex items-center justify-center">
+        <button className="bg-yellow-500 hover:bg-yellow-600 text-white p-2 rounded-full flex items-center justify-center">
             <svg
             className="h-5 w-5"
             fill="none"
